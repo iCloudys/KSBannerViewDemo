@@ -57,6 +57,8 @@ UICollectionViewDelegateFlowLayout>
 - (void)setImages:(NSArray<id<KSBannerViewDataSource>> *)images{
     _images = images;
     
+    if (images.count == 0) return;
+    
     NSMutableArray* urls = [NSMutableArray array];
     [images enumerateObjectsUsingBlock:^(id<KSBannerViewDataSource>  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         [urls addObject:[NSURL URLWithString:[obj bannerViewImageURLString]]];
@@ -210,6 +212,8 @@ UICollectionViewDelegateFlowLayout>
 //滚动到指定页面
 - (void)collectionViewScrollToPage:(NSUInteger)index animated:(BOOL)animated{
 
+    if ([self.collectionView numberOfItemsInSection:0] <= index)  return;
+    
     NSIndexPath* indexPath = [NSIndexPath indexPathForItem:index inSection:0];
     [self.collectionView scrollToItemAtIndexPath:indexPath
                                 atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally
