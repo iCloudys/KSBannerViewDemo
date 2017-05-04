@@ -55,8 +55,11 @@
     
     self.bannerView.images = banners;
     
+    __weak typeof(self) weakSelf = self;
     self.bannerView.didSelectedHandle = ^(NSUInteger idx, Model* obj) {
         NSLog(@"点击了%ld",idx);
+        UIViewController* vc = [[UIViewController alloc] init];
+        [weakSelf showViewController:vc sender:nil];
     };
 }
 
@@ -64,6 +67,5 @@
     [super viewDidLayoutSubviews];
     self.bannerView.frame = CGRectMake(0, 0, CGRectGetWidth(self.view.frame), CGRectGetWidth(self.view.frame) / 2);
 }
-
 
 @end

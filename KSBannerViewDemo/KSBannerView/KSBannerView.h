@@ -88,12 +88,12 @@ typedef void(^KSBannerViewDidEndScrollHandle)(NSUInteger idx,id<KSBannerViewData
 @property (nonatomic, strong) UIColor* currentPageIndicatorTintColor;
 
 /**
- pageControl 自定义图片,如果设置图片，会忽略pageIndicatorTintColor
+ pageControl 自定义图片,如果设置图片，会忽略pageIndicatorTintColor,最佳尺寸 7pt*7pt
  */
 @property (nonatomic, strong) UIImage* pageIndicatorImage;
 
 /**
- pageControl 自定义选中图片,如果设置图片，会忽略currentPageIndicatorTintColor
+ pageControl 自定义选中图片,如果设置图片，会忽略currentPageIndicatorTintColor,最佳尺寸 7pt*7pt
  */
 @property (nonatomic, strong) UIImage* currentPageIndicatorImage;
 

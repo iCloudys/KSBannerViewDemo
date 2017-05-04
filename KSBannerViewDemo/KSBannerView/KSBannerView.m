@@ -51,7 +51,15 @@ UICollectionViewDelegateFlowLayout>
     CGFloat pageControlX = (CGRectGetWidth(self.frame) - pageControlW) / 2;
     CGFloat pageControlY = CGRectGetHeight(self.frame) - pageControlH;
     self.pageControl.frame = CGRectMake(pageControlX, pageControlY, pageControlW, pageControlH);
+}
+
+- (void)willMoveToSuperview:(nullable UIView *)newSuperview{
+    [super willMoveToSuperview:newSuperview];
     
+    if (!newSuperview && _timer) {
+        [_timer invalidate];
+        _timer = nil;
+    }
 }
 
 - (void)setImages:(NSArray<id<KSBannerViewDataSource>> *)images{
@@ -98,8 +106,9 @@ UICollectionViewDelegateFlowLayout>
         if (self.automicScroll) {
             [self.timer invalidate];
             self.timer = nil;
+            __weak typeof(self) weakSelf = self;
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(self.timeInterval * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                [self.timer fire];
+                [weakSelf.timer fire];
             });
         }
     }
@@ -139,13 +148,13 @@ UICollectionViewDelegateFlowLayout>
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
     if (self.automicScroll) {
-        self.timer.fireDate = [NSDate distantFuture];
+        _timer.fireDate = [NSDate distantFuture];
     }
 }
 
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
     if (self.automicScroll) {
-        self.timer.fireDate = [NSDate distantPast];
+        _timer.fireDate = [NSDate distantPast];
     }
 }
 
@@ -193,6 +202,7 @@ UICollectionViewDelegateFlowLayout>
 
 //自动滚动到下一页
 - (void)scrollToNextPage{
+    
     if (self.infinite) {
         
         float contentOffsetX = self.collectionView.contentOffset.x + CGRectGetWidth(self.collectionView.frame);
@@ -206,7 +216,6 @@ UICollectionViewDelegateFlowLayout>
         }
         [self.collectionView setContentOffset:CGPointMake(contentOffsetX, 0) animated:YES];
     }
-    
 }
 
 //滚动到指定页面
@@ -232,6 +241,12 @@ UICollectionViewDelegateFlowLayout>
 }
 
 - (void)dealloc{
+
+    if (_timer) {
+        [_timer invalidate];
+        _timer = nil;
+    }
+    
     [[SDWebImagePrefetcher sharedImagePrefetcher] cancelPrefetching];
 }
 
