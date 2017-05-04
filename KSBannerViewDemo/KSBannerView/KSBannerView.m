@@ -10,6 +10,7 @@
 #import "KSBannerViewProcotal.h"
 #import "KSBannerViewItem.h"
 #import <SDWebImagePrefetcher.h>
+#import "KSPageControl.h"
 
 @interface KSBannerView ()<
 UICollectionViewDelegate,
@@ -17,7 +18,7 @@ UICollectionViewDataSource,
 UICollectionViewDelegateFlowLayout>
 
 @property (nonatomic, strong) UICollectionView                          * collectionView;
-@property (nonatomic, strong) UIPageControl                             * pageControl;
+@property (nonatomic, strong) KSPageControl                             * pageControl;
 @property (nonatomic, strong) NSTimer                                   * timer;
 
 @property (nonatomic, assign) NSUInteger                                currentPage;
@@ -230,6 +231,32 @@ UICollectionViewDelegateFlowLayout>
     [[SDWebImagePrefetcher sharedImagePrefetcher] cancelPrefetching];
 }
 
+#pragma mark- Setter
+- (void)setCurrentPageIndicatorTintColor:(UIColor *)currentPageIndicatorTintColor{
+    _currentPageIndicatorTintColor = currentPageIndicatorTintColor;
+    self.pageControl.currentPageIndicatorTintColor = currentPageIndicatorTintColor;
+}
+
+- (void)setPageIndicatorTintColor:(UIColor *)pageIndicatorTintColor{
+    _pageIndicatorTintColor = pageIndicatorTintColor;
+    self.pageControl.pageIndicatorTintColor = pageIndicatorTintColor;
+}
+
+- (void)setCurrentPageIndicatorImage:(UIImage *)currentPageIndicatorImage{
+    _currentPageIndicatorImage = currentPageIndicatorImage;
+    self.pageControl.currentPageIndicatorImage = currentPageIndicatorImage;
+}
+
+- (void)setPageIndicatorImage:(UIImage *)pageIndicatorImage{
+    _pageIndicatorImage = pageIndicatorImage;
+    self.pageControl.pageIndicatorImage = pageIndicatorImage;
+}
+
+- (void)setHidesForSinglePage:(BOOL)hidesForSinglePage{
+    _hidesForSinglePage = hidesForSinglePage;
+    self.pageControl.hidesForSinglePage = hidesForSinglePage;
+}
+
 #pragma mark- Getter
 - (UICollectionView *)collectionView{
     if (!_collectionView) {
@@ -252,11 +279,9 @@ UICollectionViewDelegateFlowLayout>
     return _collectionView;
 }
 
-- (UIPageControl*)pageControl{
+- (KSPageControl*)pageControl{
     if (!_pageControl) {
-        _pageControl = [[UIPageControl alloc] init];
-        _pageControl.currentPageIndicatorTintColor = [UIColor redColor];
-        _pageControl.pageIndicatorTintColor = [UIColor blueColor];
+        _pageControl = [[KSPageControl alloc] init];
     }
     return _pageControl;
 }

@@ -16,6 +16,7 @@
 		2CA189001EB9E4A20056ECD9 /* KSBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA188FC1EB9E4A20056ECD9 /* KSBannerView.m */; };
 		2CA189011EB9E4A20056ECD9 /* KSBannerViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA188FE1EB9E4A20056ECD9 /* KSBannerViewItem.m */; };
 		2CA189071EBABC740056ECD9 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA189061EBABC740056ECD9 /* Model.m */; };
+		2CA1890A1EBAC1D20056ECD9 /* KSPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA189091EBAC1D20056ECD9 /* KSPageControl.m */; };
 		36250968CBE576509935EC5F /* libPods-KSBannerViewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5FC700858570614367AEA7 /* libPods-KSBannerViewDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,8 @@
 		2CA188FF1EB9E4A20056ECD9 /* KSBannerViewProcotal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSBannerViewProcotal.h; sourceTree = "<group>"; };
 		2CA189051EBABC740056ECD9 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
 		2CA189061EBABC740056ECD9 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		2CA189081EBAC1D20056ECD9 /* KSPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSPageControl.h; sourceTree = "<group>"; };
+		2CA189091EBAC1D20056ECD9 /* KSPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSPageControl.m; sourceTree = "<group>"; };
 		2E9892422E2050ED394F0E0E /* Pods-KSBannerViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KSBannerViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KSBannerViewDemo/Pods-KSBannerViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		CD3F1E00183A00351015D4EC /* Pods-KSBannerViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KSBannerViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-KSBannerViewDemo/Pods-KSBannerViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 		DD5FC700858570614367AEA7 /* libPods-KSBannerViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KSBannerViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +107,8 @@
 			children = (
 				2CA188FB1EB9E4A20056ECD9 /* KSBannerView.h */,
 				2CA188FC1EB9E4A20056ECD9 /* KSBannerView.m */,
+				2CA189081EBAC1D20056ECD9 /* KSPageControl.h */,
+				2CA189091EBAC1D20056ECD9 /* KSPageControl.m */,
 				2CA188FD1EB9E4A20056ECD9 /* KSBannerViewItem.h */,
 				2CA188FE1EB9E4A20056ECD9 /* KSBannerViewItem.m */,
 				2CA188FF1EB9E4A20056ECD9 /* KSBannerViewProcotal.h */,
@@ -252,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CA189001EB9E4A20056ECD9 /* KSBannerView.m in Sources */,
+				2CA1890A1EBAC1D20056ECD9 /* KSPageControl.m in Sources */,
 				2CA189011EB9E4A20056ECD9 /* KSBannerViewItem.m in Sources */,
 				2CA188EB1EB9E4840056ECD9 /* ViewController.m in Sources */,
 				2CA189071EBABC740056ECD9 /* Model.m in Sources */,

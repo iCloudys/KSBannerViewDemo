@@ -61,13 +61,40 @@ typedef void(^KSBannerViewDidEndScrollHandle)(NSUInteger idx,id<KSBannerViewData
 @property (nonatomic, assign) BOOL automicScrollForSigle;
 
 /**
+ 图片填充模式，默认kCAGravityResize .参考[CALayer contentsGravity]
+ */
+@property (nonatomic, copy) NSString *contentsGravity;
+
+/**
  页面指示器隐藏,默认NO
  */
 @property (nonatomic, assign) BOOL pageControlHidden;
 
+
 /**
- 图片填充模式，默认kCAGravityResize .参考[CALayer contentsGravity]
+ 单张图片是否隐藏pageControl 默认NO
  */
-@property (nonatomic, copy) NSString *contentsGravity;
+@property (nonatomic, assign) BOOL hidesForSinglePage;
+
+/**
+ pageControl 未选中颜色
+ */
+@property (nonatomic, strong) UIColor* pageIndicatorTintColor;
+
+
+/**
+ pageControl 选中颜色
+ */
+@property (nonatomic, strong) UIColor* currentPageIndicatorTintColor;
+
+/**
+ pageControl 自定义图片,如果设置图片，会忽略pageIndicatorTintColor
+ */
+@property (nonatomic, strong) UIImage* pageIndicatorImage;
+
+/**
+ pageControl 自定义选中图片,如果设置图片，会忽略currentPageIndicatorTintColor
+ */
+@property (nonatomic, strong) UIImage* currentPageIndicatorImage;
 
 @end

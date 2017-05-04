@@ -22,6 +22,16 @@
     self.bannerView = [[KSBannerView alloc] init];
     [self.view addSubview:self.bannerView];
     
+    
+    self.bannerView.timeInterval = 3;
+    self.bannerView.infinite = YES;
+    self.bannerView.automicScroll = YES;
+    self.bannerView.automicScrollForSigle = NO;
+    self.bannerView.contentsGravity = kCAGravityResizeAspectFill;
+//    self.bannerView.currentPageIndicatorTintColor = [UIColor redColor];
+    self.bannerView.pageIndicatorImage = [UIImage imageNamed:@"pageIndicatorImage"];
+    self.bannerView.currentPageIndicatorImage = [UIImage imageNamed:@"currentPageIndicatorImage"];
+
     Model* obj1 = [[Model alloc] init];
     obj1.imageUrl = @"http://img.ivsky.com/img/bizhi/pre/201703/06/lykan_hypersport.jpg";
     Model* obj2 = [[Model alloc] init];
@@ -41,12 +51,6 @@
     [banners addObject:obj5];
     
     self.bannerView.images = banners;
-    
-    self.bannerView.timeInterval = 3;
-    self.bannerView.infinite = YES;
-    self.bannerView.automicScroll = YES;
-    self.bannerView.automicScrollForSigle = NO;
-    self.bannerView.contentsGravity = kCAGravityResizeAspectFill;
 }
 
 - (void)viewDidLayoutSubviews{
