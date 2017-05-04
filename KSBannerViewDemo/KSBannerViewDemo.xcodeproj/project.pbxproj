@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CA188E51EB9E4840056ECD9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA188E41EB9E4840056ECD9 /* main.m */; };
+		2CA188E81EB9E4840056ECD9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA188E71EB9E4840056ECD9 /* AppDelegate.m */; };
+		2CA188EB1EB9E4840056ECD9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA188EA1EB9E4840056ECD9 /* ViewController.m */; };
+		2CA188EE1EB9E4840056ECD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CA188EC1EB9E4840056ECD9 /* Main.storyboard */; };
+		2CA188F01EB9E4840056ECD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CA188EF1EB9E4840056ECD9 /* Assets.xcassets */; };
+		2CA188F31EB9E4840056ECD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CA188F11EB9E4840056ECD9 /* LaunchScreen.storyboard */; };
+		2CA189001EB9E4A20056ECD9 /* KSBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA188FC1EB9E4A20056ECD9 /* KSBannerView.m */; };
+		2CA189011EB9E4A20056ECD9 /* KSBannerViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA188FE1EB9E4A20056ECD9 /* KSBannerViewItem.m */; };
+		2CA189071EBABC740056ECD9 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA189061EBABC740056ECD9 /* Model.m */; };
+		36250968CBE576509935EC5F /* libPods-KSBannerViewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5FC700858570614367AEA7 /* libPods-KSBannerViewDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2CA188E01EB9E4840056ECD9 /* KSBannerViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KSBannerViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CA188E41EB9E4840056ECD9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2CA188E61EB9E4840056ECD9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2CA188E71EB9E4840056ECD9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2CA188E91EB9E4840056ECD9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2CA188EA1EB9E4840056ECD9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2CA188ED1EB9E4840056ECD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2CA188EF1EB9E4840056ECD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2CA188F21EB9E4840056ECD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2CA188F41EB9E4840056ECD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CA188FB1EB9E4A20056ECD9 /* KSBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSBannerView.h; sourceTree = "<group>"; };
+		2CA188FC1EB9E4A20056ECD9 /* KSBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSBannerView.m; sourceTree = "<group>"; };
+		2CA188FD1EB9E4A20056ECD9 /* KSBannerViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSBannerViewItem.h; sourceTree = "<group>"; };
+		2CA188FE1EB9E4A20056ECD9 /* KSBannerViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSBannerViewItem.m; sourceTree = "<group>"; };
+		2CA188FF1EB9E4A20056ECD9 /* KSBannerViewProcotal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSBannerViewProcotal.h; sourceTree = "<group>"; };
+		2CA189051EBABC740056ECD9 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		2CA189061EBABC740056ECD9 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		2E9892422E2050ED394F0E0E /* Pods-KSBannerViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KSBannerViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KSBannerViewDemo/Pods-KSBannerViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		CD3F1E00183A00351015D4EC /* Pods-KSBannerViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KSBannerViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-KSBannerViewDemo/Pods-KSBannerViewDemo.release.xcconfig"; sourceTree = "<group>"; };
+		DD5FC700858570614367AEA7 /* libPods-KSBannerViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KSBannerViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2CA188DD1EB9E4840056ECD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36250968CBE576509935EC5F /* libPods-KSBannerViewDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CA188D71EB9E4840056ECD9 = {
+			isa = PBXGroup;
+			children = (
+				2CA188FA1EB9E4A20056ECD9 /* KSBannerView */,
+				2CA188E21EB9E4840056ECD9 /* KSBannerViewDemo */,
+				2CA188E11EB9E4840056ECD9 /* Products */,
+				EC83D4854EAD547E6F9096C5 /* Pods */,
+				B629D9947C5D71792A3D8146 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2CA188E11EB9E4840056ECD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CA188E01EB9E4840056ECD9 /* KSBannerViewDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CA188E21EB9E4840056ECD9 /* KSBannerViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2CA188E61EB9E4840056ECD9 /* AppDelegate.h */,
+				2CA188E71EB9E4840056ECD9 /* AppDelegate.m */,
+				2CA188E91EB9E4840056ECD9 /* ViewController.h */,
+				2CA188EA1EB9E4840056ECD9 /* ViewController.m */,
+				2CA189051EBABC740056ECD9 /* Model.h */,
+				2CA189061EBABC740056ECD9 /* Model.m */,
+				2CA188EC1EB9E4840056ECD9 /* Main.storyboard */,
+				2CA188EF1EB9E4840056ECD9 /* Assets.xcassets */,
+				2CA188F11EB9E4840056ECD9 /* LaunchScreen.storyboard */,
+				2CA188F41EB9E4840056ECD9 /* Info.plist */,
+				2CA188E31EB9E4840056ECD9 /* Supporting Files */,
+			);
+			path = KSBannerViewDemo;
+			sourceTree = "<group>";
+		};
+		2CA188E31EB9E4840056ECD9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2CA188E41EB9E4840056ECD9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2CA188FA1EB9E4A20056ECD9 /* KSBannerView */ = {
+			isa = PBXGroup;
+			children = (
+				2CA188FB1EB9E4A20056ECD9 /* KSBannerView.h */,
+				2CA188FC1EB9E4A20056ECD9 /* KSBannerView.m */,
+				2CA188FD1EB9E4A20056ECD9 /* KSBannerViewItem.h */,
+				2CA188FE1EB9E4A20056ECD9 /* KSBannerViewItem.m */,
+				2CA188FF1EB9E4A20056ECD9 /* KSBannerViewProcotal.h */,
+			);
+			path = KSBannerView;
+			sourceTree = "<group>";
+		};
+		B629D9947C5D71792A3D8146 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD5FC700858570614367AEA7 /* libPods-KSBannerViewDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC83D4854EAD547E6F9096C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E9892422E2050ED394F0E0E /* Pods-KSBannerViewDemo.debug.xcconfig */,
+				CD3F1E00183A00351015D4EC /* Pods-KSBannerViewDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2CA188DF1EB9E4840056ECD9 /* KSBannerViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CA188F71EB9E4840056ECD9 /* Build configuration list for PBXNativeTarget "KSBannerViewDemo" */;
+			buildPhases = (
+				C678A0C2583DD7BCFB218E5B /* [CP] Check Pods Manifest.lock */,
+				2CA188DC1EB9E4840056ECD9 /* Sources */,
+				2CA188DD1EB9E4840056ECD9 /* Frameworks */,
+				2CA188DE1EB9E4840056ECD9 /* Resources */,
+				B6ED59540D946D3CBA9CA7E6 /* [CP] Embed Pods Frameworks */,
+				4DBE6C2CA358002A429D33B7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KSBannerViewDemo;
+			productName = KSBannerViewDemo;
+			productReference = 2CA188E01EB9E4840056ECD9 /* KSBannerViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2CA188D81EB9E4840056ECD9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Mr.kong;
+				TargetAttributes = {
+					2CA188DF1EB9E4840056ECD9 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = Z8VW3A9F2K;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2CA188DB1EB9E4840056ECD9 /* Build configuration list for PBXProject "KSBannerViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2CA188D71EB9E4840056ECD9;
+			productRefGroup = 2CA188E11EB9E4840056ECD9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2CA188DF1EB9E4840056ECD9 /* KSBannerViewDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2CA188DE1EB9E4840056ECD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CA188F31EB9E4840056ECD9 /* LaunchScreen.storyboard in Resources */,
+				2CA188F01EB9E4840056ECD9 /* Assets.xcassets in Resources */,
+				2CA188EE1EB9E4840056ECD9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4DBE6C2CA358002A429D33B7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KSBannerViewDemo/Pods-KSBannerViewDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6ED59540D946D3CBA9CA7E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KSBannerViewDemo/Pods-KSBannerViewDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C678A0C2583DD7BCFB218E5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2CA188DC1EB9E4840056ECD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CA189001EB9E4A20056ECD9 /* KSBannerView.m in Sources */,
+				2CA189011EB9E4A20056ECD9 /* KSBannerViewItem.m in Sources */,
+				2CA188EB1EB9E4840056ECD9 /* ViewController.m in Sources */,
+				2CA189071EBABC740056ECD9 /* Model.m in Sources */,
+				2CA188E81EB9E4840056ECD9 /* AppDelegate.m in Sources */,
+				2CA188E51EB9E4840056ECD9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2CA188EC1EB9E4840056ECD9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CA188ED1EB9E4840056ECD9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2CA188F11EB9E4840056ECD9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CA188F21EB9E4840056ECD9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2CA188F51EB9E4840056ECD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2CA188F61EB9E4840056ECD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2CA188F81EB9E4840056ECD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E9892422E2050ED394F0E0E /* Pods-KSBannerViewDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z8VW3A9F2K;
+				INFOPLIST_FILE = KSBannerViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.anfou.test.KSBannerViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2CA188F91EB9E4840056ECD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD3F1E00183A00351015D4EC /* Pods-KSBannerViewDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z8VW3A9F2K;
+				INFOPLIST_FILE = KSBannerViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.anfou.test.KSBannerViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2CA188DB1EB9E4840056ECD9 /* Build configuration list for PBXProject "KSBannerViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CA188F51EB9E4840056ECD9 /* Debug */,
+				2CA188F61EB9E4840056ECD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CA188F71EB9E4840056ECD9 /* Build configuration list for PBXNativeTarget "KSBannerViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CA188F81EB9E4840056ECD9 /* Debug */,
+				2CA188F91EB9E4840056ECD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2CA188D81EB9E4840056ECD9 /* Project object */;
+}
